@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #数据源类型
+    driver-class-name: com.mysql.cj.jdbc.Driver   #加载驱动
+    url: jdbc:mysql://localhost:3306/chtest?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: ch123456
+mybatis:
+  mapper-locations: classpath:com.example.ch.vedio.demos.web.mapper/*Mapper.xml #指定mapper文件所在的位置,其中classpath必须和mapper-locations分开
+  type-aliases-package: com.example.ch.vedio.demos.web.dto
+
